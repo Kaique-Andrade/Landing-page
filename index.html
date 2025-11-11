@@ -20,16 +20,18 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#">LOGO</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false"><a href="#home">LOGO</a></h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false">
                     <li><a href="#intro">Intro</a></li>
-                    <li><a href="#top3">Top 3</a></li>
                     <li><a href="#grid-one">Grid-one</a></li>
                     <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#grid-two">Grid-two</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -38,7 +40,7 @@
     </aside>
 
     <div class="menu-spacing"></div>
-    <section id="intro" class="main-bg section ">
+    <section id="home" class="main-bg section ">
         <div class="main-content intro-content">
             <div class="intro-text-content">
                 <h2>January Brings Us Firefox 85</h2>
@@ -54,7 +56,7 @@
             </div>
         </div>
     </section>
-    <section id="top3" class="white-bg section">
+    <section id="intro" class="white-bg section">
         <div class="main-content top3-content">
             <h2>News coverage and some surprises</h2>
             <p>The release of Apple Silicon-based Macs at the end of last year
@@ -128,6 +130,37 @@
                 <div class="gallery-img">
                     <img src="assets/img/foto6_640x640.jpg" alt="random image from unsplash">
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="grid-two" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">My grid</h2>
+            <p class="grid-description">Breve descição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed facere in totam maiores animi quo esse nobis non molestiae,
+                        ullam voluptatem labore voluptas natus nostrum aspernatur,
+                        tempore eum, neque doloribus.</p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed facere in totam maiores animi quo esse nobis non molestiae,
+                        ullam voluptatem labore voluptas natus nostrum aspernatur,
+                        tempore eum, neque doloribus.
+                    </p>
+                </article>
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed facere in totam maiores animi quo esse nobis non molestiae,
+                        ullam voluptatem labore voluptas natus nostrum aspernatur,
+                        tempore eum, neque doloribus.
+                    </p>
+                </article>
             </div>
         </div>
     </section>
@@ -238,6 +271,8 @@
     <footer class="footer white-bg" id="footer">
         <p><a rel="nofollow" target="_blank">Feito com ❤ por Kaique Andrade</a></p>
     </footer>
+
+    <a class="back-to-top" href="#">➤</a>
 </body>
 
 </html>
